@@ -1,0 +1,203 @@
+.loading-container {
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    display: none;
+    
+  }
+  
+  .dot-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 50%;
+    margin: 5px;
+    animation: jump 1s infinite ease-in-out;
+  }
+  
+  .dot1 {
+    animation-delay: 0s;
+    background-color: #9b9fa3;
+  }
+  
+  .dot2 {
+    animation-delay: 0.2s;
+    background-color: #105090;
+  }
+  
+  .dot3 {
+    animation-delay: 0.4s;
+    background-color: #9b9fa3;
+  }
+  
+  .dot4 {
+    animation-delay: 0.6s;
+    background-color: #105090;
+  }
+  
+  .dot5 {
+    animation-delay: 0.8s;
+    background-color: #9b9fa3;
+  }
+  
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.form-container{
+    width: 60%;
+    min-width: 300px;
+    height: 80vh;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+.form-img{
+    width: 40%;
+    height: 80vh;
+    object-fit: cover;
+}
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #b9b9b9;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    font-family: 'lato',sans-serif;
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+}
+::placeholder{
+    color: #b9b9b9;
+    text-transform: capitalize;
+}
+
+input::-webkit-inner-spin-button{
+-webkit-appearance: none;
+margin: 0;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #d5be8b;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+    color: #000;
+}
+
+.error{
+    display: block;
+    font-size: .8erm;
+    color: rgb(255, 41, 42);
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-family: 'lato',sans-serif;
+    -webkit-user-select: none;
+    opacity: 0;
+
+}
+
+.error.show{
+   opacity: 1;   
+}
+
+#tc{
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      background-color: #ddd;
+      border: 2px solid #333;
+      border-radius: 15px;
+      position: relative;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: 0;
+}
+#tc::before{
+    background-color: #008000;
+}
+#tc::after{
+    content: "\2713"; /* Unicode checkmark symbol */
+      display: none;
+      font-size: 14px;
+      color: #fff; /* Checkmark color when checked */
+      position: absolute;
+      top: 2px;
+      left: 5px;
+}
+
+.tc-text{
+    margin-left: 5px;
+    font-size: 0.8rem;
+    font-family: 'lato',sans-serif;
+}
+
+.tc-text a{
+    color: #000;
+}
+.submit-btn {
+    display: block;
+    margin: 20px 0;
+    padding: 12px 20px;
+    width: 100px;
+    padding: .8rem 0;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'cinzel';
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.submit-btn:hover{
+    background-color: #3e8e41;
+}
+.submit-btn:active {
+    background-color: #3e8e41;
+}
+.other-form-link{
+    font-family: 'lato',sans-serif;
+    color: black;
+    font-size: .8rem;
+}
+
