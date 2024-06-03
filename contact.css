@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    margin-top: 100px;
+    background-color: #d5be8d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.map-container {
+    margin-left: 25%;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-details {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details p {
+    margin: 10px 25%;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .map-container,
+    .contact-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
